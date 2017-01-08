@@ -1,20 +1,16 @@
-module.exports = {
-  entry: "./src/app.js",
+module.exports = [{
+  entry: "./src/auth-app.js",
   output: {
-    filename: "build/bundle.js"
+    filename: "build/auth-bundle.js"
   },
   debug: true,
   devtool: "source-map",
-  // module: {
-  //   loaders: [
-  //     {
-  //       test: /\.js$/,
-  //       exclude: /(node_modules|bower_components)/,
-  //       loader: 'babel-loader',
-  //       query: {
-  //         presets: ['es2015']
-  //       }
-  //     }
-  //   ]
-  // }
-}
+},
+{
+  entry: "./src/admin-app.js",
+  output: {
+    filename: "build/admin-bundle.js"
+  },
+  debug: true,
+  devtool: "source-map",
+}];

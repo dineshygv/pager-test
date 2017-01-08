@@ -7,7 +7,7 @@ function authLoginLayout(params) {
 }
 
 function register(layoutParams) {
-    ko.components.register('auth-login', {
+    ko.components.register('login', {
         viewModel: authLoginLayout,
         template: template
     });

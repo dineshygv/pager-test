@@ -47,8 +47,8 @@
 	var page = __webpack_require__(1);
 	var ko = __webpack_require__(5);
 	var $ = __webpack_require__(8);
-	var urlUtil = __webpack_require__(11);
-	var authLayout = __webpack_require__(12);
+	var urlUtil = __webpack_require__(9);
+	var authLayout = __webpack_require__(10);
 	
 	page.base('/#');
 	
@@ -17480,9 +17480,7 @@
 
 
 /***/ },
-/* 9 */,
-/* 10 */,
-/* 11 */
+/* 9 */
 /***/ function(module, exports) {
 
 	function parseQueryString(queryString) {
@@ -17506,14 +17504,14 @@
 	}
 
 /***/ },
-/* 12 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var template = __webpack_require__(13);
+	var template = __webpack_require__(11);
 	var page = __webpack_require__(1);
 	var ko = __webpack_require__(5);
-	var loginPage = __webpack_require__(14);
-	var signupPage = __webpack_require__(16);
+	var loginPage = __webpack_require__(12);
+	var signupPage = __webpack_require__(14);
 	
 	function authLayout(params) {
 	    //Default page is login
@@ -17540,16 +17538,16 @@
 	}
 
 /***/ },
-/* 13 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<h2>This is common for all auth pages</h2>\r\n<div id=\"authLayoutContainer\" data-bind = \"component: { name: pageName, params: pageParams }\"></div>"
 
 /***/ },
-/* 14 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var template = __webpack_require__(15);
+	var template = __webpack_require__(13);
 	var page = __webpack_require__(1);
 	var ko = __webpack_require__(5);
 	
@@ -17569,16 +17567,16 @@
 	}
 
 /***/ },
-/* 15 */
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>This is the login page</div>"
 
 /***/ },
-/* 16 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var template = __webpack_require__(17);
+	var template = __webpack_require__(15);
 	var page = __webpack_require__(1);
 	var ko = __webpack_require__(5);
 	
@@ -17598,7 +17596,7 @@
 	}
 
 /***/ },
-/* 17 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>This is the signup page</div>"
