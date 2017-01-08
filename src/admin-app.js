@@ -1,10 +1,8 @@
 var commonApp = require("./common-app");
 
-var loginPage = require("./pages/auth/login/login");
-var signupPage = require("./pages/auth/signup/signup");
+var userPage = require("./pages/admin/user/user");
 
 commonApp.register('admin', 'login');
 
-loginPage.register();
-signupPage.register();
+userPage.register();
 
