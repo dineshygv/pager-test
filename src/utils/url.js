@@ -1,3 +1,7 @@
+// this function takes something like
+// param1=apple&param2=mango and gives out an object like
+// { param1: "apple", param2: "mango"}
+// useful for queryString parsing
 function parseQueryString(queryString) {
     var queryParams = {};
 
